@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #1a1e23;
+  color: #ffffff;
+}
+
+.dark .nav-menu {
+  background-color: #2a2f35;
+}
+
+.dark .nav-item {
+  color: #a0a6ab;
+}
+
+.dark .nav-item:hover,
+.dark .nav-item.active {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+/* Light Theme */
+.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.light .nav-menu {
+  background-color: #f5f5f5;
+}
+
+.light .nav-item {
+  color: #666666;
+}
+
+.light .nav-item:hover,
+.light .nav-item.active {
+  color: #15a362;
+  background: rgba(21, 163, 98, 0.1);
+}
+
+.app-container {
+  padding-left: 80px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding-left: 0;
+    padding-bottom: 60px;
+  }
+}
